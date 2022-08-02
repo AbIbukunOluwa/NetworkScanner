@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/bin/env python
 
 import argparse
 import scapy.all as scapy
@@ -25,7 +25,7 @@ def scan(ip):
     address_list = []
 
     for packet in result:
-        address_dict = {"ip_add": packet[1].pdst, "mac_add": packet[1].hwsrc}
+        address_dict = {"ip_add": packet[1].psrc, "mac_add": packet[1].hwsrc}
         address_list.append(address_dict)
 
     return address_list
