@@ -11,7 +11,7 @@
 
 
 use case:
-sudo python3 netscan.py -r 102.98.255.1/24
+sudo python3 netscan.py -r 192.168.55.1/24
 
 
 result:
